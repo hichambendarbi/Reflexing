@@ -29,6 +29,7 @@ function App() {
         <Box2>
           <div className="dtc w5 v-mid pa3">
             <img
+              alt="Laboratoire fes logo"
               src="https://storage.mindeskvr.com/static/mindesk-logo-white-50.png"
               style={{
                 marginLeft: "40px",
