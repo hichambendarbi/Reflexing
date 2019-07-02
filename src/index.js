@@ -23,7 +23,7 @@ function App() {
               marginBottom: "5px"
             }}
           >
-            Adress : EL ATlasse Rue des far{" "}
+            Maps : EL ATlasse Rue des far{" "}
           </div>
         </Box1>
         <Box2>
