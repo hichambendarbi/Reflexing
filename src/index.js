@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Box, Box1, Box2 } from "./reFlexing/Box";
+import Flex, { Box } from "./reFlexing";
 
 import "./styles.css";
 
 function App() {
   return (
     <div className="App">
-      <Box>
-        <Box1>
+      <Flex>
+        <Box
+          css={
+            "display: flex; flex-flow: row;  width: 100%;  min-width: 400px;  color: black;  font-size: 15px;  border-bottom: 1px solid gray;"
+          }
+        >
           <div
             style={{
               marginLeft: "40px",
@@ -25,8 +29,12 @@ function App() {
           >
             Adress : EL ATlasse Rue des far{" "}
           </div>
-        </Box1>
-        <Box2>
+        </Box>
+        <Box
+          css={
+            "display: flex; align-self: flex-start;  align-items: center; flex-flow: row; box-sizing: border-box; width: 100%; min-width: 400px; flex-grow: 1; margin-left: 0px; background-color: seagreen;"
+          }
+        >
           <div className="dtc w5 v-mid pa3">
             <img
               alt="Laboratoire fes logo"
@@ -129,8 +137,8 @@ function App() {
               </a>
             </div>
           </div>
-        </Box2>
-      </Box>
+        </Box>
+      </Flex>
     </div>
   );
 }
