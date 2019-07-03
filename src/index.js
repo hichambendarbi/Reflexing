@@ -7,10 +7,11 @@ import "./styles.css";
 function App() {
   return (
     <div className="App">
-      <Flex>
+      <Flex row>
         <Box
           css={
-            "display: flex; flex-flow: row;  width: 100%;  min-width: 400px;  color: black;  font-size: 15px;  border-bottom: 1px solid gray;"
+            " width: 50%;  min-width: 400px;  color: black;" +
+            " font-size: 15px;  border-bottom: 1px solid gray;"
           }
         >
           <div
@@ -32,7 +33,7 @@ function App() {
         </Box>
         <Box
           css={
-            "display: flex; align-self: flex-start;  align-items: center; flex-flow: row; box-sizing: border-box; width: 100%; min-width: 400px; flex-grow: 1; margin-left: 0px; background-color: seagreen;"
+            "display: flex; align-self: flex-start;  align-items: center; flex-flow: row; box-sizing: border-box; width: 50%; min-width: 400px; flex-grow: 1; margin-left: 0px; background-color: seagreen;"
           }
         >
           <div className="dtc w5 v-mid pa3">
