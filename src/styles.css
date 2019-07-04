@@ -5,3 +5,36 @@
 .wideDiv a:hover {
   color: #000;
 }
+@media screen and (max-width: 800px) {
+  #cn {
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Adress {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  #Tel {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #lab {
+    text-align: center;
+    width: 200px;
+  }
+}
