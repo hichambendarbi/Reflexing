@@ -11,6 +11,21 @@
   }
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+  margin-left: 5px;
+  font-size: 17px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: white;
+  background-color: #57ccc3;
+  border-radius: 5px;
+}
+.bg-light {
+  background-color: white !important;
+  box-shadow: 0px 1px 2px transparent, 0px -2px 2px #888;
+}
+
 @media screen and (max-width: 800px) {
   #Tel {
     visibility: hidden;
