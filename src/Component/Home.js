@@ -3,12 +3,6 @@ import Flex from "../reFlexing";
 /**
  * import page layout
  */
-import Header from "../Layout/Header";
-
-const Home = () => (
-  <Flex>
-    <Header />
-  </Flex>
-);
+const Home = () => <Flex>Home page</Flex>;
 
 export default Home;

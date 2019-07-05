@@ -13,8 +13,21 @@ const BoxContainer = styled.div`
   align-content: space-between;
 `;
 
-export const Flex = ({ children, row, flow, flexDirextion, wrap }) => (
-  <BoxContainer row={row} flow={flow} flexDirextion={flexDirextion} wrap={wrap}>
+export const Flex = ({
+  children,
+  row,
+  flow,
+  flexDirextion,
+  wrap,
+  ...props
+}) => (
+  <BoxContainer
+    row={row}
+    flow={flow}
+    flexDirextion={flexDirextion}
+    wrap={wrap}
+    {...props}
+  >
     {children}
   </BoxContainer>
 );

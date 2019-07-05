@@ -1,62 +1,48 @@
 import React from "react";
 import Flex, { Box } from "../reFlexing";
-import { flexbox } from "@material-ui/system";
+import styled from "styled-components";
 import "../styles.css";
-const Header = () => (
-  <Box
-    backgroundC={"#f8f9fa"}
-    width={"100%"}
-    padding={"3px"}
-    height={"50px"}
-    display={"flex"}
-    marginT="0px"
-  >
-    <Box
-      width="150px"
-      backgroundC="transparent"
-      marginL="50px"
-      height="30px"
-      marginT="12px"
-      color="#4CAF50"
-      fontS="20px"
-    >
-      <div id="lab">Laboratoire Fes</div>
-    </Box>
-    <Box
-      width="210px"
-      backgroundC="transparent"
-      marginL="70px"
-      marginT="16px"
-      color="#4CAF50"
-    >
-      <div id="Tel">Telephone: +212 521222223</div>
-    </Box>
-    <Box
-      width="40px"
-      backgroundC="transparent"
-      marginL="15px"
-      marginT="16px"
-      color="#4CAF50"
-    >
-      <div id="Adress">Adress: EL atlass avenue</div>
-    </Box>
 
-    <Box width="100px" backgroundC="transparent" marginL="29%" marginT="5px">
-      <button
-        id="cn"
-        style={{
-          backgroundColor: "white",
-          border: "2px solid #4CAF50",
-          cursor: "pointer",
-          color: "black",
-          width: "100px",
-          height: "40px",
-          fontSize: "15px"
-        }}
-      >
-        Connecter
-      </button>
-    </Box>
+//Nom de laboratoire
+const LaboratoryName = styled.div`
+  width: 150px;
+  background-color: transparent;
+  margin-left: 50px;
+  height: 30px;
+  margin-right: 12px;
+  color: #4caf50;
+  font-size: 20px;
+`;
+
+//Tele de laboratoire
+const LaboratoryTele = styled.div`
+  width: 210px;
+  background-color: transparent;
+  margin-left: 70px;
+  margin-top: 16px;
+  color: #4caf50;
+`;
+
+//Adress de laboratoire
+const LaboratoireAddress = styled.div`
+  width: 40px;
+  background-color: transparent;
+  margin-left: 15px;
+  margin-top: 16px;
+  color: #4caf50;
+`;
+
+const Header = () => (
+  <Box style={{ border: "1px solid red", width: "100%" }}>
+    <Flex row>
+      <Box flex={"4"}>
+        <LaboratoryName>Laboratoire Fes</LaboratoryName>
+      </Box>
+      <Box flex={"1"}>
+        <LaboratoryTele>06776667676767</LaboratoryTele>
+      </Box>
+      <Box flex={"2"}>1</Box>
+    </Flex>
   </Box>
 );
 
