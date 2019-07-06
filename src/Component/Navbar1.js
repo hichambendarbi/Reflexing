@@ -45,7 +45,7 @@ export default class Example extends React.Component {
                   active="true"
                   style={{
                     color: "#FFFFF",
-                    backgroundColor: "#57ccc3",
+                    backgroundColor: "#A6D230",
                     borderRadius: "5px"
                   }}
                 >
