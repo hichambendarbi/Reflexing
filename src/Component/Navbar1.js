@@ -64,8 +64,8 @@ export default class Example extends React.Component {
                   Nos Services
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Service1</DropdownItem>
-                  <DropdownItem>Service2</DropdownItem>
+                  <DropdownItem>Prendre un Rendez</DropdownItem>
+                  <DropdownItem>Parler en ligne</DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>Service3</DropdownItem>
                 </DropdownMenu>
