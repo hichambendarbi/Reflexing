@@ -5,6 +5,7 @@ import Flex from "./reFlexing";
 //Import Website layout
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
+import Container from "./Layout/Container";
 /**
  * Website Pages
  */
@@ -26,11 +27,12 @@ import Home from "./Component/Home";
  */
 
 import "./styles.css";
+
 function App() {
   return (
     <Flex>
       <Header />
-      <Home />
+      <Container />
       <Footer />
     </Flex>
   );

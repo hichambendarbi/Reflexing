@@ -44,9 +44,8 @@ export default class Example extends React.Component {
                   href="/components/"
                   active="true"
                   style={{
-                    color: "#FFFFF",
-                    backgroundColor: "#A6D230",
-                    borderRadius: "5px"
+                    color: "#4fad36",
+                    borderBottom: "2px solid red"
                   }}
                 >
                   Acceuil
