@@ -13,17 +13,28 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
-  margin-left: 5px;
+  margin-left: 10px;
   font-size: 17px;
 }
 .navbar-light .navbar-nav .nav-link:hover {
-  color: white;
-  background-color: #a6d230;
-  border-radius: 5px;
+  color: #4fad36;
+  border-bottom: 2px solid red;
+  animation-duration: 2s;
 }
 .bg-light {
   background-color: white !important;
-  box-shadow: 0px 1px 2px red, 0px -2px 2px transparent;
+}
+
+.navbar-light .navbar-brand {
+  color: red;
+  font-weight: 900;
+  font-size: 25px;
+}
+
+@media (min-width: 960px) {
+  .B1 .B2 {
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 800px) {

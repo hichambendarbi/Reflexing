@@ -25,10 +25,7 @@ const LaboratoryName = styled.div`
   height: 30px;
   color: white;
   flex: 1;
-  margin-left: 10px;
   font-size: 20px;
-  padding-left: 0px;
-  padding-right: 0px;
   margin-top: 0.5%;
   margin-bottom: 0.5%;
   font-weight: 900;
@@ -37,20 +34,21 @@ const LaboratoryName = styled.div`
 //Tele de laboratoire
 const LaboratoryTele = styled.div`
   background-color: transparent;
-  color: gray;
-  margin-left: 0px;
+  color: white;
   flex: 1;
-  padding-left: 0px;
-  padding-right: 0px;
 `;
 
 //Adress de laboratoire
 const LaboratoireAddress = styled.div`
   width: 40px;
-  color: gray;
+  color: white;
   flex: 1;
-  padding-left: 0px;
-  padding-right: 0px;
+`;
+
+const LaboratoireConnecter = styled.div`
+  width: 40px;
+  color: white;
+  flex: 1;
 `;
 const BoxPrincipale = styled.div`
   width: 100%;
@@ -58,26 +56,28 @@ const BoxPrincipale = styled.div`
 
 const BoxHeader1 = styled.div`
   width: 100%;
-  font-size: 12px;
-  background-color: red;
+  font-size: 15px;
+  background-color: #4fad36;
 `;
 const BoxHeader2 = styled.div`
   width: 100%;
   font-size: 20px;
-  border-bottom: 1px solid lightseagreen;
 `;
 
 const Header = () => (
   <BoxPrincipale style={{ width: "100%" }}>
     <Flex style={{ width: "100%" }}>
-      <BoxHeader1>
-        <Flex row style={{ width: "100%" }}>
+      <BoxHeader1 className="B1">
+        <Flex className="B2" row style={{ width: "100%", marginLeft: "16px" }}>
           <LaboratoryName>Laboratoire Fes</LaboratoryName>
-          <LaboratoryTele>Tel : +212 521213244</LaboratoryTele>
-          <LaboratoireAddress>
-            Adress : EL Atlass rue des far
-          </LaboratoireAddress>
-          <Box style={{ width: "5%" }}>ok</Box>
+          <Box style={{ flex: "2", marginLeft: "100px" }}>
+            <Flex row>
+              <LaboratoryTele>Tel : +212 521213244</LaboratoryTele>
+              <LaboratoireAddress>
+                Adress : EL Atlass rue des far
+              </LaboratoireAddress>
+            </Flex>
+          </Box>
         </Flex>
       </BoxHeader1>
       <BoxHeader2>
