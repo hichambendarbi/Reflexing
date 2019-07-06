@@ -37,7 +37,7 @@ const LaboratoryName = styled.div`
 //Tele de laboratoire
 const LaboratoryTele = styled.div`
   background-color: transparent;
-  color: gray;
+  color: white;
   margin-left: 0px;
   flex: 1;
   padding-left: 0px;
@@ -47,10 +47,17 @@ const LaboratoryTele = styled.div`
 //Adress de laboratoire
 const LaboratoireAddress = styled.div`
   width: 40px;
-  color: gray;
+  color: white;
   flex: 1;
   padding-left: 0px;
   padding-right: 0px;
+`;
+
+const LaboratoireConnecter = styled.div`
+  width: 40px;
+  color: white;
+  flex: 1;
+  margin-left: 20px;
 `;
 const BoxPrincipale = styled.div`
   width: 100%;
@@ -59,7 +66,7 @@ const BoxPrincipale = styled.div`
 const BoxHeader1 = styled.div`
   width: 100%;
   font-size: 12px;
-  background-color: red;
+  background-color: #4fad36;
 `;
 const BoxHeader2 = styled.div`
   width: 100%;
@@ -77,7 +84,7 @@ const Header = () => (
           <LaboratoireAddress>
             Adress : EL Atlass rue des far
           </LaboratoireAddress>
-          <Box style={{ width: "5%" }}>ok</Box>
+          <LaboratoireConnecter>Connecter</LaboratoireConnecter>
         </Flex>
       </BoxHeader1>
       <BoxHeader2>
